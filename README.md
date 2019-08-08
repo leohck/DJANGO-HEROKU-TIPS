@@ -1,3 +1,4 @@
+ESSE TUTORIAL FOI COPIADO DE: https://github.com/Gpzim98/django-heroku
 # django-heroku
 Minimal configuration to host a Django project at Heroku
 
