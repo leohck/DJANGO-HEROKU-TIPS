@@ -74,7 +74,7 @@ pip freeze > requirements-dev.txt
 * psycopg2
 
 ## Create a file Procfile and add the following code
-* web: gunicorn website.wsgi --log-file -
+* web: gunicorn website.wsgi
 
 ## Create a file runtime.txt and add the following core
 * python-3.6.0
