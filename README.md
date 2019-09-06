@@ -41,6 +41,13 @@ Minimal configuration to host a Django project at Heroku
 * from decouple import config
 * SECRET_KEY = config('SECRET_KEY')
 * DEBUG = config('DEBUG', default=False, cast=bool)
+para melhorar o carregamento de arquivos staticos
+em MIDDLEWARE adicionar
+MIDDLEWARE = [
+"""
+'whitenoise.middleware.WhiteNoiseMiddleware',
+"""
+]
 
 ## Configuring the Data Base
 * pip install dj-database-url
