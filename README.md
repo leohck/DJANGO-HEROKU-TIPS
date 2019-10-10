@@ -1,7 +1,21 @@
-ESSE TUTORIAL FOI COPIADO DE: https://github.com/Gpzim98/django-heroku
+ALGUMAS PARTES DESTE TUTORIAL FORAM COPIADAS DE: https://github.com/Gpzim98/django-heroku
 
+---------------------------------------------------------------------
 selenium + heroku = https://www.youtube.com/watch?v=Ven-pqwk3ec
+heroku ==Buildpacks==
+https://github.com/heroku/heroku-buildpack-google-chrome
+https://github.com/heroku/heroku-buildpack-chromedriver
+==Environment Variables==
+CHROMEDRIVER_PATH = /app/.chromedriver/bin/chromedriver
+GOOGLE_CHROME_BIN = /app/.apt/usr/bin/google-chrome
 
+chrome_options = webdriver.ChromeOptions()
+chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+chrome_options.add_argument("--disable-dev-shm-usage")
+chrome_options.add_argument("--no-sandbox")
+chrome_options.headless = True
+chrome = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=chrome_options)
+---------------------------------------------------------------------
 
 # django-heroku
 Minimal configuration to host a Django project at Heroku
