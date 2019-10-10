@@ -1,4 +1,8 @@
 ESSE TUTORIAL FOI COPIADO DE: https://github.com/Gpzim98/django-heroku
+
+selenium + heroku = https://www.youtube.com/watch?v=Ven-pqwk3ec
+
+
 # django-heroku
 Minimal configuration to host a Django project at Heroku
 
